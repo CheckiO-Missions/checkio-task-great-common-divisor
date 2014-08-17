@@ -43,7 +43,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             var fname = 'greatest_common_divisor';
 
             var checkioInput = data.in || [2, 3];
-            var checkioInputStr = fname + '(' + checkioInput.join(", ") + ')';
+            var checkioInputStr = fname + '(<br>' + checkioInput.join(",<br>") + ')';
 
             var failError = function (dError) {
                 $content.find('.call').html(checkioInputStr);

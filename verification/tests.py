@@ -6,115 +6,67 @@ Each test is dict with
     "answer" -- your right answer
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
-
-
 TESTS = {
     "Basics": [
         {
-            "input": [12, 8],
-            "answer": 4
+            "input": [6, 4],
+            "answer": 2
         },
         {
-            "input": [14, 21],
-            "answer": 7
+            "input": [2, 4, 8],
+            "answer": 2
         },
         {
-            "input": [13, 11],
+            "input": [2, 3, 5, 7, 11],
             "answer": 1
         },
         {
-            "input": [55, 66],
-            "answer": 11
+            "input": [3, 9, 3, 9],
+            "answer": 3
         },
+    ],
+    "Edge": [
         {
-            "input": [50, 10],
-            "answer": 10
-        },
-        {
-            "input": [29, 37],
+            "input": [1, 1],
             "answer": 1
         },
         {
-            "input": [94, 47],
-            "answer": 47
+            "input": [4294967296, 2],
+            "answer": 2
         },
         {
-            "input": [65, 125],
-            "answer": 5
+            "input": [32, 256, 2048, 16384, 131072, 1048576, 8388608, 67108864, 536870912, 4294967296],
+            "answer": 32
         },
         {
-            "input": [36, 156],
-            "answer": 12
-        },
-        {
-            "input": [36, 9],
-            "answer": 9
-        },
-        {
-            "input": [8, 32],
-            "answer": 8
-        },
-        {
-            "input": [17, 17],
-            "answer": 17
-        },
-        {
-            "input": [88, 24],
-            "answer": 8
+            "input": [11, 13, 17, 19, 23, 29, 31, 37, 41, 43],
+            "answer": 1
         }
     ],
     "Extra": [
         {
-            "input": [12, 8],
-            "answer": 4
+            "input": [2226172404, 2652430846, 3702223254, 3260139372, 2021191608],
+            "answer": 2
         },
         {
-            "input": [14, 21],
+            "input": [1047734205, 731227527],
+            "answer": 3
+        },
+        {
+            "input": [606914679, 1496978895, 3951290184],
+            "answer": 3
+        },
+        {
+            "input": [1540765093, 1353759337, 1120458213],
             "answer": 7
         },
         {
-            "input": [13, 11],
-            "answer": 1
+            "input": [2655680644, 2383739556, 3860750380, 1756514556],
+            "answer": 4
         },
         {
-            "input": [55, 66],
-            "answer": 11
+            "input": [2167650657, 1496767446, 2685881265, 452884638, 2222724963],
+            "answer": 3
         },
-        {
-            "input": [50, 10],
-            "answer": 10
-        },
-        {
-            "input": [29, 37],
-            "answer": 1
-        },
-        {
-            "input": [94, 47],
-            "answer": 47
-        },
-        {
-            "input": [65, 125],
-            "answer": 5
-        },
-        {
-            "input": [36, 156],
-            "answer": 12
-        },
-        {
-            "input": [36, 9],
-            "answer": 9
-        },
-        {
-            "input": [8, 32],
-            "answer": 8
-        },
-        {
-            "input": [17, 17],
-            "answer": 17
-        },
-        {
-            "input": [88, 24],
-            "answer": 8
-        }
     ]
 }
