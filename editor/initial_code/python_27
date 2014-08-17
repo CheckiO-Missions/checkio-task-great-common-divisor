@@ -6,7 +6,7 @@ def great_common_divisor(*args):
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
-    assert great_common_divisor(3, 2) == 6, "Simple"
-    assert great_common_divisor(2, 4, 8) == 8, "Three arguments"
-    assert great_common_divisor(2, 3, 5, 7, 11) == 2310, "Prime numbers"
-    assert great_common_divisor(2, 2, 3, 3) == 6, "Repeating arguments"
+    assert great_common_divisor(6, 4) == 2, "Simple"
+    assert great_common_divisor(2, 4, 8) == 2, "Three arguments"
+    assert great_common_divisor(2, 3, 5, 7, 11) == 1, "Prime numbers"
+    assert great_common_divisor(3, 9, 3, 9) == 3, "Repeating arguments"

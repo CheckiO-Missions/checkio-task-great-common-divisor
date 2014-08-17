@@ -40,9 +40,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             }
 
             //YOUR FUNCTION NAME
-            var fname = 'checkio';
+            var fname = 'great_common_divisor';
 
-            var checkioInput = data.in;
+            var checkioInput = data.in || [2, 3];
             var checkioInputStr = fname + '(' + JSON.stringify(checkioInput) + ')';
 
             var failError = function (dError) {
@@ -84,6 +84,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
                     $content.find('.answer').addClass('error');
                     $content.find('.output').addClass('error');
                     $content.find('.call').addClass('error');
+                }
+                else {
+                    $content.find('.answer').remove();
                 }
             }
             else {
