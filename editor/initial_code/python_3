@@ -1,12 +1,12 @@
-def checkio(data):
-    a, b = data
-    
-    #replace this for solution
+def great_common_divisor(*args):
+    """
+        Find the greatest common divisor
+    """
     return 1
 
-
-#These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio((12, 8)) == 4, "First example"
-    assert checkio((14, 21)) == 7, "Second example"
-    assert checkio((13, 11)) == 1, "Third example"
+    #These "asserts" using only for self-checking and not necessary for auto-testing
+    assert great_common_divisor(3, 2) == 6, "Simple"
+    assert great_common_divisor(2, 4, 8) == 8, "Three arguments"
+    assert great_common_divisor(2, 3, 5, 7, 11) == 2310, "Prime numbers"
+    assert great_common_divisor(2, 2, 3, 3) == 6, "Repeating arguments"
