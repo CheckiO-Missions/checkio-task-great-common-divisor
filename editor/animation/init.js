@@ -40,10 +40,10 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             }
 
             //YOUR FUNCTION NAME
-            var fname = 'great_common_divisor';
+            var fname = 'greatest_common_divisor';
 
             var checkioInput = data.in || [2, 3];
-            var checkioInputStr = fname + '(' + JSON.stringify(checkioInput) + ')';
+            var checkioInputStr = fname + '(' + checkioInput.join(", ") + ')';
 
             var failError = function (dError) {
                 $content.find('.call').html(checkioInputStr);
