@@ -1,0 +1,37 @@
+<div class="story">
+    <p>
+        "[The Euclidean algorithm] is the granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+        that has survived to the present day."<br>
+        -- Donald Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms, 2nd edition (1981).
+    </p>
+</div>
+
+<p>
+    <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B9_%D0%BE%D0%B1%D1%89%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C">
+    Наибольший общий делитель</a> (НОД),
+    для двух и более целых чисел называется наибольшее число, которое делит каждое число из данных без остатка.
+</p>
+<p>
+    Даны несколько положительных чисел. Найдите НОД для этих чисел.
+</p>
+
+<p><strong>Входные данные: </strong> Различное число аргументов, как целые числа.</p>
+
+<p><strong>Выходные данные: </strong> Наибольший общий делитель, как целое число.</p>
+
+<p class="p1"><strong>Примеры:</strong></p>
+<pre class="brush: python">
+great_common_divisor(6, 4) == 2
+great_common_divisor(2, 4, 8) == 2
+</pre>
+
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    НОД - это один из базисов для математического ПО.
+
+</p>
+
+<p>
+    <strong>Предусловия: </strong><br>
+    1 &lt; len(args) &le; 10<br>
+    all(0 &lt; x &le; 2 ** 32 for x in args)
