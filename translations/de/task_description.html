@@ -1,39 +1,45 @@
 <div class="story">
-    <p>
-        "[The Euclidean algorithm] is the granddaddy of all algorithms, because it is the oldest nontrivial algorithm
-        that has survived to the present day."<br>
-        -- Donald Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms, 2nd edition (1981).
-    </p>
+  <p>
+    "[Der euklidische Algorithmus] ist der Urvater aller Algorithmen, denn er ist der
+    älteste nichttriviale Algorithmus, der bis heute überlebt hat."<br>
+    -- Donald Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms,
+    2nd edition (1981).<br>
+    -- Freie Übersetzung
+  </p>
 </div>
 
 <p>
-    <a href="http://en.wikipedia.org/wiki/Greatest_common_divisor">The greatest common divisor</a> (GCD), also known as
-    the greatest common factor of two or more integers (at least one of which is not zero), is the largest positive
-    integer that divides a number without a remainder. For example, the GCD of 8 and 12 is 4.
+  <a href="https://de.wikipedia.org/wiki/Gr%C3%B6%C3%9Fter_gemeinsamer_Teiler">Der größte
+    gemeinsame Teiler</a> (ggT),
+  ist die größte natürliche Zahl durch die sich zwei oder mehr ganze Zahlen ohne Rest
+  teilen lassen.<br>
+  Der größte gemeinsame Teiler von 8 und 12, geschrieben als ggT(8, 12), ist zum Beispiel
+  die 4.
 </p>
 <p>
-    You are given an arbitrary number of positive integers.
-    You should find the greatest common divisor for these numbers.
+  Du erhältst eine beliebige Anzahl von positiven ganzen Zahlen.<br>
+  Deine Aufgabe ist es eine Funktion zu schreiben, die den größten gemeinsamen Teiler
+  <strong>all dieser Zahlen</strong> findet und zurückgibt.
 </p>
 
-<p><strong>Input: </strong> An arbitrary number of positive integers.</p>
+<p><strong>Eingabe: </strong> Eine beliebige Anzahl von positiven ganzen Zahlen.</p>
 
-<p><strong>Output: </strong> The greatest common divisor as an integer.</p>
+<p><strong>Ausgabe: </strong> Der größte gemeinsame Teiler als positive ganze Zahl.</p>
 
-<p class="p1"><strong>Example:</strong></p>
+<p class="p1"><strong>Beispiele:</strong></p>
 <pre class="brush: python">
-great_common_divisor(6, 4) == 2
-great_common_divisor(2, 4, 8) == 2
+greatest_common_divisor(6, 4) == 2
+greatest_common_divisor(2, 4, 8) == 2
 </pre>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    GCD is a basic concept found in mathematically oriented software. This is a good example of a simple algorithm which
-    has many possible applications.
-
+  <strong>Wozu das gut ist:</strong><br>
+  Der ggT ist ein Grundkonzept mathematisch orientierter Software.<br>
+  Diese Aufgabe ist ein gutes Beispiel für einen einfachen Algorithmus, der viele
+  Anwendungsmöglichkeiten hat.
 </p>
 
 <p>
-    <strong>Precondition: </strong><br>
-    1 &lt; len(args) &le; 10<br>
-    all(0 &lt; x &le; 2 ** 32 for x in args)
+  <strong>Bedingungen: </strong><br>
+  1 &lt; len(args) &le; 10<br>
+  all(0 &lt; x &le; 2 ** 32 for x in args)
