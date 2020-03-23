@@ -1,0 +1,45 @@
+<div class="story">
+  <p>
+    "[Der euklidische Algorithmus] ist der Urvater aller Algorithmen, denn er ist der
+    älteste nichttriviale Algorithmus, der bis heute überlebt hat."<br>
+    -- Donald Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms,
+    2nd edition (1981).<br>
+    -- Freie Übersetzung
+  </p>
+</div>
+
+<p>
+  <a href="https://de.wikipedia.org/wiki/Gr%C3%B6%C3%9Fter_gemeinsamer_Teiler">Der größte
+    gemeinsame Teiler</a> (ggT),
+  ist die größte natürliche Zahl durch die sich zwei oder mehr ganze Zahlen ohne Rest
+  teilen lassen.<br>
+  Der größte gemeinsame Teiler von 8 und 12, geschrieben als ggT(8, 12), ist zum Beispiel
+  die 4.
+</p>
+<p>
+  Du erhältst eine beliebige Anzahl von positiven ganzen Zahlen.<br>
+  Deine Aufgabe ist es eine Funktion zu schreiben, die den größten gemeinsamen Teiler
+  <strong>all dieser Zahlen</strong> findet und zurückgibt.
+</p>
+
+<p><strong>Eingabe: </strong> Eine beliebige Anzahl von positiven ganzen Zahlen.</p>
+
+<p><strong>Ausgabe: </strong> Der größte gemeinsame Teiler als positive ganze Zahl.</p>
+
+<p class="p1"><strong>Beispiele:</strong></p>
+<pre class="brush: python">
+greatest_common_divisor(6, 4) == 2
+greatest_common_divisor(2, 4, 8) == 2
+</pre>
+
+<p class="for_info_only">
+  <strong>Wozu das gut ist:</strong><br>
+  Der ggT ist ein Grundkonzept mathematisch orientierter Software.<br>
+  Diese Aufgabe ist ein gutes Beispiel für einen einfachen Algorithmus, der viele
+  Anwendungsmöglichkeiten hat.
+</p>
+
+<p>
+  <strong>Bedingungen: </strong><br>
+  1 &lt; len(args) &le; 10<br>
+  all(0 &lt; x &le; 2 ** 32 for x in args)
