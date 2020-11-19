@@ -20,20 +20,31 @@
 
 <p><strong>Output: </strong> The greatest common divisor as an integer.</p>
 
-<p class="p1"><strong>Example:</strong></p>
-<pre class="brush: python">
-great_common_divisor(6, 4) == 2
-great_common_divisor(2, 4, 8) == 2
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">greatestCommonDivisor(6, 4) == 2
+greatestCommonDivisor(2, 4, 8) == 2
+greatestCommonDivisor(2, 3, 5, 7, 11) == 1
+greatestCommonDivisor(3, 9, 3, 9) == 3
 </pre>
-
-<p class="for_info_only">
-    <strong>How it is used: </strong>
-    GCD is a basic concept found in mathematically oriented software. This is a good example of a simple algorithm which
-    has many possible applications.
-
-</p>
+{% else %}
+<pre class="brush: python">greatest_common_divisor(6, 4) == 2
+greatest_common_divisor(2, 4, 8) == 2
+greatest_common_divisor(2, 3, 5, 7, 11) == 1
+greatest_common_divisor(3, 9, 3, 9) == 3
+</pre>
+{% endif %}
+</div>
 
 <p>
     <strong>Precondition: </strong><br>
     1 &lt; len(args) &le; 10<br>
     all(0 &lt; x &le; 2 ** 32 for x in args)
+
+</p>
